@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>First SVG</h1>
+        <svg width="400" height="400">
+            <rect
+                x="0"
+                y="0"
+                width="100%"
+                height="100%"
+                fill="gray"
+                opacity="50%"
+            ></rect>
+            <circle
+                cx="52"
+                cy="52"
+                r="50"
+                stroke="green"
+                stroke-width="4"
+                fill="yellow"
+            ></circle>
+            <ellipse
+                cx="210"
+                cy="52"
+                rx="50"
+                ry="40"
+                stroke="green"
+                stroke-width="4"
+                fill="red"
+            ></ellipse>
+            <line
+                x1="20"
+                y1="150"
+                x2="200"
+                y2="250"
+                stroke-width="10"
+                stroke="blue"
+            />
+        </svg>
+        <svg width="600" height="600">
+            <rect
+                x="0"
+                y="0"
+                width="400"
+                height="400"
+                fill="gray"
+                opacity="0.4"
+            ></rect>
+            <circle cx="200" cy="200" r="50" opacity="0.2"></circle>
+            <path
+                id="abc"
+                d="M150,200  a150,150 0 1,0 150,-150 v20 a130,130 0 1 1 -130 130z"
+                fill="red"
+                stroke="blue"
+                stroke-width="5"
+                cursor="pointer"
+            />
+            <path
+                d="M 200 100
+                     A 100 100 0 1 0 300 200"
+                stroke="black"
+                stroke-dasharray="inherit"
+                stroke-linecap="round"
+                fill="green"
+                stroke-width="5"
+                fill-opacity="0.5"
+            />
+        </svg>
+        <script src="script.js"></script>
+    </body>
+</html>
