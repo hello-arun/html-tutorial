@@ -1,0 +1,22 @@
+.parent {
+    background-color: aqua;
+}
+
+.child-one {
+    height: 30px;
+    background-color: red;
+    position: relative;
+    left: 10px;
+    top: 10px;
+
+}
+
+.child-two {
+    height: 30px;
+    background-color: green;
+}
+
+.child-three {
+    height: 30px;
+    background-color: blue;
+}
