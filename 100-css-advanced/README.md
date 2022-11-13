@@ -153,6 +153,8 @@ Similar to `em`. `em` scale with the font size for parent element whereas `rem` 
 
 ### Position
 
+https://youtu.be/jx5jmI0UlXU
+
 #### `static`
 
 By default position is `static`.
@@ -174,9 +176,48 @@ This allows us to position the element relative to where it would normally be if
 
 ![](__ref/pos-relative.png)
 
-Look how it overflowed the child-two. 
+Look how it overflowed the child-two.  So position relative is not used generally with top left right bottom.
 
 #### `absolute`
 
+Treat the element such that it is bind to no one. Feels like it does not even existed. 
+* It can be used to stick something and do not want to move it around.
+* By default it will feel that it is relative to top left of screen.
+* But if it has a parent component that it can reference then the position will be relative to that. 
+
+* example1: In this case the position will be relative to top left of screen. because by default parent is `static`. so it's child element can't reference to it.
+```css
+.parent {
+    background-color: aqua;
+}
+
+.child-one {
+    height: 30px;
+    background-color: red;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+```
+![](__ref/pos-abs-1.png)
+
+
+* example2: If we change the position type of parent then the child-1 will adjust relative to it.
+
+```css
+.parent {
+    background-color: aqua;
+    position: relative;
+}
+
+.child-one {
+    height: 30px;
+    background-color: red;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+```
+![](__ref/pos-abs-2.png)
 
 

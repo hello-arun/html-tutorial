@@ -1,14 +1,14 @@
 .parent {
     background-color: aqua;
+    position: relative;
 }
 
 .child-one {
     height: 30px;
     background-color: red;
-    position: relative;
-    left: 10px;
+    position: absolute;
     top: 10px;
-
+    left: 10px;
 }
 
 .child-two {
