@@ -1,0 +1,29 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: minmax(50px, auto);
+    grid-gap: 5px;
+    grid-template-areas: 
+    "header header"
+    "sidebar content"
+    "sidebar content";
+}
+
+.grid-item {
+    background-color: red;
+    font-size: 24px;
+    /* margin-bottom: 2px; */
+    /* border: 2px solid rgb(255, 255, 255); */
+}
+
+.grid-item-1{
+    grid-area: header;
+}
+
+.grid-item-2{
+    grid-area: sidebar;
+}
+
+.grid-item-3{
+    grid-area: content;
+}
