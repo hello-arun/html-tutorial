@@ -1,0 +1,10 @@
+svg {
+    background-color: gray;
+    width: 600px;
+    height: 600px;
+}
+
+circle {
+    fill: red;
+    stroke: black;
+}
