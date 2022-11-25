@@ -1,0 +1,18 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    transition: transform 0.5s, background 0.5s;
+}
+
+.box:hover {
+    transform: scale(1.1) ;
+    background : blue;
+}

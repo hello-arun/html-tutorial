@@ -1,5 +1,6 @@
-import { Node, postOrderTravel } from "./tree.js"
-import { drawCircle } from "./circle.js";
+import { Node } from "./tree.js"
+import { printTree } from "./treePrint.js";
+
 // Nodes
 const root = new Node("A");
 const al = new Node("AL");
@@ -17,11 +18,4 @@ ar.left = arl
 ar.right = arr
 
 
-console.log(root)
-console.log("Post Order Traversal")
-
-drawCircle(50, 50)
-drawCircle(50, 150)
-drawCircle(150, 150)
-drawCircle(150, 150)
-console.log(postOrderTravel(root))
+printTree(root)
