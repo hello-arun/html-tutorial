@@ -1,0 +1,21 @@
+svg {
+    background-color: gray;
+    width: 600px;
+    height: 600px;
+}
+
+circle {
+    fill: red;
+    stroke: black;
+}
+
+
+g {
+    transform: translate(50%,50%);
+}
+
+text {
+    fill: white;
+    text-anchor: middle;
+    /* text-justify: distribute-all-lines; */
+}
