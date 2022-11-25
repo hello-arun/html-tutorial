@@ -1,42 +1,41 @@
-import { Node ,TreeLayout} from "./tree.js";
+import { beautifyTree, drawTree } from "./tree.js";
+import { Node } from "./Node.js";
 // import { printTree } from "./treePrint.js";
 
 // Nodes
-const _O = new Node("O");
-const _E = new Node("E", _O,1);
-const _F = new Node("F", _O,2);
-const _N = new Node("N", _O,3);
-_O.children = [_E, _F, _N];
+const _Z = new Node("Z");
 
-const _A = new Node("A", _E,1);
-const _D = new Node("D", _E,2);
-_E.children = [_A, _D];
+const _Z1 = new Node("Z1");
+const _Z11 = new Node("Z11");
+const _Z12 = new Node("Z12");
+const _Z111 = new Node("Z111");
+const _Z112 = new Node("Z112");
+const _Z121 = new Node("Z121");
+const _Z122 = new Node("Z122");
 
-const _A1 = new Node("A1", _A,1);
-const _A2 = new Node("A2", _A,2);
-_A.children = [_A1,_A2]
+const _Z2 = new Node("Z2");
+const _Z21 = new Node("Z21");
+const _Z211 = new Node("Z211");
 
-const _B = new Node("B", _D,1);
-const _C = new Node("C", _D,2);
-_D.children = [_B, _C];
+const _Z3 = new Node("Z3");
 
-const _G = new Node("G", _N,1);
-const _M = new Node("M", _N,2);
-_N.children = [_G, _M];
+const _Z31 = new Node("Z31");
+const _Z32 = new Node("Z32");
+const _Z321 = new Node("Z321");
+const _Z322 = new Node("Z322");
+const _Z323 = new Node("Z323");
+const _Z324 = new Node("Z324");
+const _Z325 = new Node("Z325");
 
-const _H = new Node("H", _M,1);
-const _I = new Node("I", _M,2);
-const _J = new Node("J", _M,3);
-const _K = new Node("K", _M,4);
-const _L = new Node("L", _M,5);
-_M.children = [_H, _I, _J, _K, _L];
+_Z.setChildren([_Z1, _Z2, _Z3]);
+_Z1.setChildren([_Z11, _Z12]);
+_Z2.setChildren([_Z21]);
+_Z3.setChildren([_Z31, _Z32]);
 
-// console.log(_O)
-// console.log(_D.getLeftSibling())
+_Z11.setChildren([_Z111, _Z112]);
+_Z12.setChildren([_Z121, _Z122]);
+_Z21.setChildren([_Z211]);
+_Z32.setChildren([_Z321, _Z322, _Z323, _Z324, _Z325]);
 
-TreeLayout(_O)
-console.log(_O)
-// printTree(root)
-
-
-
+beautifyTree(_Z);
+drawTree(_Z)

@@ -12,3 +12,7 @@ export function drawCircle(cx, cy,name, r = 5) {
     g.append(circle)
     g.append(text)
 }
+
+
+
+
